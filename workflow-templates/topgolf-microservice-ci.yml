@@ -1,0 +1,15 @@
+name: Topgolf Microservice CI
+
+on:
+  push:
+    branches:
+      - "**"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - id: set-version
+        uses: TopGolf/actions/microservice/set-version
+      - run: echo tags ${{ steps.set-version.outputs.tags }}
