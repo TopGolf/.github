@@ -11,5 +11,5 @@ jobs:
 
     steps:
       - id: set-version
-        uses: TopGolf/actions/microservice/set-version
+        uses: TopGolf/actions/microservice/set-version@v1
       - run: echo tags ${{ steps.set-version.outputs.tags }}
