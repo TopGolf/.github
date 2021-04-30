@@ -1,8 +1,5 @@
 {
   "name": "Release Drafter",
   "description": "Drafts the next release notes as pull requests are merged into dev",
-  "iconName": "hammer-and-wrench",
-  "filePatterns": [
-  ".github/release-drafter-config.yaml"
-  ]
+  "iconName": "hammer-and-wrench"
 }
