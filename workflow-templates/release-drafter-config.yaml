@@ -1,0 +1,44 @@
+name-template: 'v$RESOLVED_VERSION'
+tag-template: 'v$RESOLVED_VERSION'
+categories:
+  - title: What's Improved
+    labels:
+      - 'feature'
+      - 'enhancement'
+  - title: Bugs Fixed
+    labels:
+      - 'fix'
+      - 'bugfix'
+      - 'bug'
+  - title: Maintenance
+    labels:
+      - 'task'
+      - 'techdebt'
+autolabeler:
+  - label: 'task'
+    branch:
+      - '/task\/.+/'
+  - label: 'techdebt'
+    branch:
+      - '/techdebt\/.+/'
+  - label: 'bug'
+    branch:
+      - '/bug\/.+/'
+  - label: 'bugfix'
+    branch:
+      - '/bugfix\/.+/'
+  - label: 'fix'
+    branch:
+      - '/fix\/.+/'
+  - label: 'enhancement'
+    branch:
+      - '/enhancement\/.+/'
+  - label: 'feature'
+    branch:
+      - '/feature\/.+/'
+change-template: '- $TITLE - @$AUTHOR (#$NUMBER)'
+change-title-escapes: '\<*_&' # You can add # and @ to disable mentions, and add ` to disable code blocks.
+template: |
+  # Release Notes
+
+  $CHANGES
