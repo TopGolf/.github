@@ -1,0 +1,21 @@
+{
+  "name": "Topgolf Semantic Release Workflow",
+  "description": "Topgolf Semantic Release starter workflow.",
+  "iconName": "semantic-release-logo",
+  "categories": [
+    "continuous-integration",
+    "deployment",
+    "testing",
+    "code-quality",
+    "code-review",
+    "dependency-management",
+    "monitoring",
+    "Automation",
+    "utilities"
+  ],
+  "filePatterns": [
+      "^Dockerfile",
+      ".*\\.md$",
+      "^helm"
+  ]
+}

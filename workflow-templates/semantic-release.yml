@@ -1,0 +1,28 @@
+name: Semantic Release
+
+on:
+  push:
+    branches:
+      - master
+      - main
+      - "*.x"
+      - feature-*
+      - bug-*
+  pull_request_target:
+  workflow_dispatch:
+
+jobs:
+  reusable-workflow:
+    name: Semantic Release Reusable Workflow
+    uses: topgolf/semantic-release-topgolf-reusable-workflow/.github/workflows/main-ci.yml@v1
+    secrets:
+      ARTIFACTORY_API_KEY: ${{ secrets.ARTIFACTORY_API_KEY }}
+      ARTIFACTORY_USER: ${{ secrets.ARTIFACTORY_USER }}
+      TOPGOLFCI_TOKEN: ${{ secrets.TOPGOLFCI_TOKEN }}
+      CONFLUENCE_USERNAME: ${{ secrets.CONFLUENCE_USERNAME }}
+      CONFLUENCE_PASSWORD: ${{ secrets.CONFLUENCE_PASSWORD }}
+    # Optional: If you want to override the default version of the reusable workflow
+    #           Jinja2 template, you can set the following
+    # with:
+    #   semantic_release_reusable_workflow_git_repo: "TopGolf/semantic-release-topgolf-reusable-workflow"
+    #   semantic_release_reusable_workflow_git_ref: "v1"
