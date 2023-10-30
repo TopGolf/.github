@@ -1,0 +1,21 @@
+{
+  "name": "Lint PR Workflow",
+  "description": "Lint PR starter workflow.",
+  "iconName": "lint-pr-logo",
+  "categories": [
+    "continuous-integration",
+    "deployment",
+    "testing",
+    "code-quality",
+    "code-review",
+    "dependency-management",
+    "monitoring",
+    "Automation",
+    "utilities"
+  ],
+  "filePatterns": [
+      "^Dockerfile",
+      ".*\\.md$",
+      "^helm"
+  ]
+}
