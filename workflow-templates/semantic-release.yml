@@ -14,12 +14,7 @@ jobs:
   reusable-workflow:
     name: Semantic Release Reusable Workflow
     uses: topgolf/semantic-release-topgolf-reusable-workflow/.github/workflows/main-ci.yml@v1
-    secrets:
-      ARTIFACTORY_API_KEY: ${{ secrets.ARTIFACTORY_API_KEY }}
-      ARTIFACTORY_USER: ${{ secrets.ARTIFACTORY_USER }}
-      TOPGOLFCI_TOKEN: ${{ secrets.TOPGOLFCI_TOKEN }}
-      CONFLUENCE_USERNAME: ${{ secrets.CONFLUENCE_USERNAME }}
-      CONFLUENCE_PASSWORD: ${{ secrets.CONFLUENCE_PASSWORD }}
+    secrets: inherit
     # Optional: If you want to override the default version of the reusable workflow
     #           Jinja2 template, you can set the following
     # with:
