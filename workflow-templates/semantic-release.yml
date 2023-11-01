@@ -6,8 +6,8 @@ on:
       - master
       - main
       - "*.x"
-      - feature-*
-      - bug-*
+      - feat-*
+      - fix-*
   workflow_dispatch:
 
 jobs:
