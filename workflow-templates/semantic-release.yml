@@ -11,6 +11,13 @@ on:
   workflow_dispatch:
 
 jobs:
+  # UNCOMMENT OR DELETE THE FOLLOWING AS NEEDED
+  # BuildDockerImage:
+  #   uses: topgolf/build-docker-topgolf-reusable-workflow/.github/workflows/build-docker.yml@v2
+  #   secrets:
+  #     DOCKERHUB_TOKEN: ${{ secrets.ARTIFACTORY_API_KEY }}
+  #     DOCKERHUB_USERNAME: ${{ secrets.ARTIFACTORY_USER }}
+
   reusable-workflow:
     name: Semantic Release Reusable Workflow
     uses: topgolf/semantic-release-topgolf-reusable-workflow/.github/workflows/main-ci.yml@v1
