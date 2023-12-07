@@ -11,7 +11,15 @@ on:
   workflow_dispatch:
 
 jobs:
+  # UNCOMMENT OR DELETE THE FOLLOWING AS NEEDED
+  # BuildDockerImage:
+  #   uses: topgolf/build-docker-topgolf-reusable-workflow/.github/workflows/build-docker.yml@v2
+  #   secrets: inherit
+
   reusable-workflow:
+    # UNCOMMENT OR DELETE THE FOLLOWING AS NEEDED
+    # needs:
+    #  - BuildDockerImage
     name: Semantic Release Reusable Workflow
     uses: topgolf/semantic-release-topgolf-reusable-workflow/.github/workflows/main-ci.yml@v1
     secrets: inherit
