@@ -21,7 +21,7 @@ jobs:
     # needs:
     #  - BuildDockerImage
     name: Semantic Release Reusable Workflow
-    uses: topgolf/semantic-release-topgolf-reusable-workflow/.github/workflows/main-ci.yml@v1
+    uses: topgolf/semantic-release-topgolf-reusable-workflow/.github/workflows/main-ci.yml@v4
     secrets: inherit
     # Optional: If you want to override the default version of the reusable workflow
     #           Jinja2 template, you can set the following
