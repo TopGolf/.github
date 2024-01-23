@@ -13,7 +13,7 @@ on:
 jobs:
   # UNCOMMENT OR DELETE THE FOLLOWING AS NEEDED
   # BuildDockerImage:
-  #   uses: topgolf/build-docker-topgolf-reusable-workflow/.github/workflows/build-docker.yml@v2
+  #   uses: topgolf/build-docker-topgolf-reusable-workflow/.github/workflows/build-docker.yml@v1
   #   secrets: inherit
 
   reusable-workflow:
