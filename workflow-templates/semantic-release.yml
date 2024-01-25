@@ -19,10 +19,12 @@ jobs:
   # UNCOMMENT OR DELETE THE FOLLOWING AS NEEDED
   # UploadGenericArtifact:
   #   runs-on: [self-hosted, linux, x64]
-  #   uses: actions/upload-artifact@v4
-  #   with:
-  #     name: generic-artifact-some-file
-  #     path: some-file.exe
+  #   steps:
+  #     - name: Upload a generic artifact
+  #       uses: actions/upload-artifact@v4
+  #       with:
+  #         name: generic-artifact-some-file
+  #         path: some-file.exe
 
   reusable-workflow:
     # UNCOMMENT OR DELETE THE FOLLOWING AS NEEDED
