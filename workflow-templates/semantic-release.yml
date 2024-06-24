@@ -32,8 +32,3 @@ jobs:
     name: Semantic Release Reusable Workflow
     uses: topgolf/semantic-release-topgolf-reusable-workflow/.github/workflows/main-ci.yml@v4
     secrets: inherit
-    # Optional: If you want to override the default version of the reusable workflow
-    #           Jinja2 template, you can set the following
-    # with:
-    #   semantic_release_reusable_workflow_git_repo: "TopGolf/semantic-release-topgolf-reusable-workflow"
-    #   semantic_release_reusable_workflow_git_ref: "v1"
